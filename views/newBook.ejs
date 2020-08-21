@@ -1,0 +1,36 @@
+<%- include('partials/header') %>
+<h1>New Book Details</h1>
+<img id="homeImg" src="images/library.jpg" alt="">
+<form class="" action="/newBook" method="post">
+  <div class="form-group dataEntry">
+    <label class="labels" for="customerName">Customer ID</label>
+    <input type="text" name="customerID" value="">
+  </div>
+  <div class="form-group dataEntry">
+    <label class="labels" for="date">Date Issued</label>
+    <input type="text" name="dateDate" value="<%=dateDateOfBook%>" size="1"><input type="text" name="dateMonth" value="<%=dateMonthOfBook%>" size="1">
+  </div>
+  <div class="form-group dataEntry">
+    <label class="labels" for="">Select duration</label>
+    <label for="duration1">1 week</label>
+    <input class="checkbox" type="checkbox" name="duration1" value="true">
+    <label for="duration2">1 month</label>
+    <input class="checkbox" type="checkbox" name="duration2" value="true">
+    <label for="duration3">3 month</label>
+    <input class="checkbox" type="checkbox" name="duration3" value="true">
+  </div>
+  <div class="form-group dataEntry">
+    <label class="labels" for="bookName">Book ID</label>
+    <input type="text" name="bookID" value="">
+  </div>
+  <div class="form-group dataEntry">
+    <label class="labels" for="comments">Any special note</label>
+  </div>
+  <div class="form-group dataEntry">
+    <textarea name="comments" rows="2" cols="80"></textarea>
+  </div>
+  <button class="btn btn-lg btn-outline-success newBookSubmit" type="submit" name="button">Submit</button>
+</form>
+
+
+<%- include('partials/footer') %>

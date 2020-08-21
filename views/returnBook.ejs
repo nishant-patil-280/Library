@@ -1,0 +1,35 @@
+<%- include('partials/header') %>
+
+<h1>Return Issued Book</h1>
+<img id="homeImg" src="images/library.jpg" alt="">
+<form class="" action="/returnBook" method="post">
+  <div class="form-group dataEntry">
+    <label class="labels" for="customerName">Customer ID</label>
+    <input type="text" name="customerID" value="<%=customerId%>">
+  </div>
+  <div class="form-group dataEntry">
+    <label class="labels" for="">Date Issued</label>
+    <input type="text" name="dateDate" value="<%=dateDateOfBook%>" size="1"><input type="text" name="dateMonth" value="<%=dateMonthOfBook%>" size="1">
+  </div>
+  <div class="form-group dataEntry">
+    <label class="labels" for="">Date Returned</label>
+    <input type="text" name="dateDate" value="<%=dateDateOfBookR%>" size="1"><input type="text" name="dateMonth" value="<%=dateMonthOfBookR%>" size="1">
+  </div>
+  <div class="form-group dataEntry">
+    <label class="labels" for="duraton">Duration</label>
+    <input type="text" name="duraton" value="<%=duration%>" size="1">
+  </div>
+  <div class="form-group dataEntry">
+    <label class="labels" for="bookName">Name of the book</label>
+    <input type="text" name="bookName" value="<%=nameOfBook%>">
+  </div>
+  <div class="form-group dataEntry">
+    <label class="labels" for="total">Total</label>
+    <input type="text" name="total" value="<%=total%>">
+  </div>
+  <button class="btn btn-lg btn-outline-primary newBookSubmit" type="submit" name="button">Done</button>
+</form>
+
+
+
+<%- include('partials/footer') %>
