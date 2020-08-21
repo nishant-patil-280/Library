@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-mongoose.connect("mongodb+srv://admin:nishantpatil12345@library.6rclc.mongodb.net/libraryDB?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://admin:<password>@library.6rclc.mongodb.net/libraryDB?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false
